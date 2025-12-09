@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Shop | Cambodia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-icon"><i class="fas fa-shopping-bag"></i></span>
+          Fashion Shop
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+          <a href="comingsoon.html"
+            ><div class="profile-icon"><i class="fas fa-user"></i></div
+          ></a>
+
+          <a href="payment.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero fade-in">
+      <div class="hero-content">
+        <h1>New Style, New You</h1>
+        <p class="kh">ការប្រមូលផ្តុំម៉ូដទាន់សម័យឆ្នាំ ២០២៥</p>
+        <a href="#shop" class="cta-button kh">មើលទំនិញ</a>
+      </div>
+    </section>
+
+    <section id="shop" class="products-container fade-in">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+            alt="Shoe"
+          />
+          <div class="product-info">
+            <h3>Nike Red</h3>
+            <p class="price">$49.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(49.00, 'Nike Red')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(49.00, 'Nike Red', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500"
+            alt="Heels"
+          />
+          <div class="product-info">
+            <h3>High Heels</h3>
+            <p class="price">$35.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(35.00, 'High Heels')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(35.00, 'High Heels', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1589782182703-2aaa69037b5b?w=500"
+            alt="Glasses"
+          />
+          <div class="product-info">
+            <h3>Sunglasses</h3>
+            <p class="price">$15.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(15.00, 'Sunglasses')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(15.00, 'Sunglasses', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+            alt="Watch"
+          />
+          <div class="product-info">
+            <h3>Luxury Watch</h3>
+            <p class="price">$120.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(120.00, 'Luxury Watch')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(120.00, 'Luxury Watch', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=500"
+            alt="Bag"
+          />
+          <div class="product-info">
+            <h3>Gucci Bag</h3>
+            <p class="price">$250.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(250.00, 'Gucci Bag')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(250.00, 'Gucci Bag', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+            alt="Headphone"
+          />
+          <div class="product-info">
+            <h3>Headphone</h3>
+            <p class="price">$85.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(85.00, 'Headphone')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(85.00, 'Headphone', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500"
+            alt="Shoe"
+          />
+          <div class="product-info">
+            <h3>Puma Black</h3>
+            <p class="price">$55.00</p>
+            <div class="action-buttons">
+              <button
+                class="add-to-cart"
+                onclick="addToCart(55.00, 'Puma Black')"
+              >
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(55.00, 'Puma Black', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500"
+            alt="Glasses"
+          />
+          <div class="product-info">
+            <h3>Rayban</h3>
+            <p class="price">$110.00</p>
+            <div class="action-buttons">
+              <button class="add-to-cart" onclick="addToCart(110.00, 'Rayban')">
+                Add to Cart
+              </button>
+              <a
+                href="#"
+                class="buy-now"
+                onclick="addToCart(110.00, 'Rayban', true)"
+                >Buy Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="kh">Fashion Shop</h3>
+          <p class="kh">ទំនិញគុណភាពខ្ពស់ តម្លៃសមរម្យ។</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="payment.html">Checkout</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a><br />
+            phone: +855 123 456 789<br />
+            email: info@fashionshop.com
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Location</h3>
+          <p>Phnom Penh, Cambodia</p>
+          <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Fashion Shop. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Key ថ្មីដែលប្រើសម្រាប់រក្សាទុក Cart Array ទាំងមូល
+      const CART_KEY = "shoppingCart";
+
+      // មុខងារជំនួយ៖ ទទួលបាន Cart ពី Local Storage
+      function getCart() {
+        const cartString = localStorage.getItem(CART_KEY);
+        // ប្រសិនបើមានទិន្នន័យ ត្រូវបំប្លែងពី String ទៅ Object/Array
+        return cartString ? JSON.parse(cartString) : [];
+      }
+
+      // មុខងារជំនួយ៖ រក្សាទុក Cart ចូលក្នុង Local Storage
+      function saveCart(cart) {
+        // ត្រូវបំប្លែងពី Object/Array ទៅជា String ដើម្បីរក្សាទុក
+        localStorage.setItem(CART_KEY, JSON.stringify(cart));
+
+        // ធ្វើបច្ចុប្បន្នភាព Cart Count លើ Icon
+        const cartCountElement = document.querySelector(".cart-count");
+        cartCountElement.textContent = cart.length; // រាប់ចំនួនទំនិញសរុប
+      }
+
+      // មុខងារកែសម្រួលថ្មី៖ Add to Cart
+      function addToCart(price, name, isBuyNow = false) {
+        let cart = getCart();
+
+        // បង្កើត Object សម្រាប់ទំនិញថ្មី
+        const newItem = {
+          id: Date.now(), // ប្រើ timestamp ដើម្បីបង្កើត ID ពិសេស
+          name: name,
+          price: price.toFixed(2),
+          quantity: 1, // កំណត់ចំនួនដំបូងគឺ 1
+        };
+
+        // បន្ថែមទំនិញថ្មីចូលក្នុង Cart Array
+        cart.push(newItem);
+
+        // រក្សាទុក Cart ថ្មី
+        saveCart(cart);
+
+        // ដំណើរការ Effect លើប៊ូតុង Add to Cart
+        if (!isBuyNow) {
+          const button = event.currentTarget;
+          const originalText = button.textContent;
+
+          button.textContent = "Added!";
+          button.style.backgroundColor = "#27ae60";
+          button.style.color = "white";
+          button.style.pointerEvents = "none";
+
+          setTimeout(() => {
+            button.textContent = originalText;
+            button.style.backgroundColor = "";
+            button.style.color = "";
+            button.style.pointerEvents = "auto";
+          }, 1000);
+        } else {
+          // បើចុច Buy Now ត្រូវលោតទៅទំព័រ Payment ក្រោយ Add ចូល Cart
+          window.location.href = "payment.html";
+        }
+      }
+
+      // មុខងារផ្ទុក Cart ពេលទំព័រ load ដំបូង
+      document.addEventListener("DOMContentLoaded", () => {
+        const cart = getCart();
+        saveCart(cart); // ធ្វើបច្ចុប្បន្នភាព count ឡើងវិញ (ឧ. ពេល Refresh)
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
